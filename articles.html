@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container mt-4">
+  <h2 class="mb-4">📰 Fashion Articles & Insights</h2>
+  <div class="row">
+    {% for article in items %}
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">{{ article.title }}</h5>
+            <p class="card-text">{{ article.summary }}</p>
+            {% if article.link %}
+              <a href="{{ article.link }}" target="_blank" class="btn btn-outline-dark">Read More</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

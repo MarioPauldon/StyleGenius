@@ -1,0 +1,165 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ecf0f1; /* Light grey background */
+    color: #2c3e50; /* Dark navy blue text */
+    padding-top: 0px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #463018 !important; /* Base color */
+    
+}
+
+.navbar a {
+    color: white !important;
+}
+
+.navbar a:hover {
+    color: #3498db !important; /* Accent color */
+}
+
+/* Headers */
+h2, h3 {
+    color: #2c3e50;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #3498db; /* Accent color */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9; /* Slightly darker blue */
+}
+
+.btn-danger {
+    background-color: #e74c3c; /* Red for discard */
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+/* Form Styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Inputs */
+input, select {
+    border-radius: 5px !important;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+}
+
+/* Success and Error Messages */
+.alert-success {
+    background-color: #2ecc71;
+    color: white;
+    text-align: center;
+}
+
+.alert-danger {
+    background-color: #e74c3c;
+    color: white;
+    text-align: center;
+}
+.dropdown-menu .dropdown-item {
+    color: black !important;
+}
+
+/* Enable submenus inside dropdowns */
+.dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    display: none;
+    position: absolute;
+  }
+  
+  .dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+  }
+  
+  .big-button {
+    font-size: 1.5rem; /* Make text bigger */
+    padding: 1rem 2rem; /* More padding inside the button */
+    border-radius: 50px; /* More roundness if you want */
+}
+
+/* Modern Primary Button */
+.modern-btn-primary {
+    background-color: #3498db;
+    color: white;
+    font-size: 1.25rem;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.modern-btn-primary:hover {
+    background-color: #2c80b4;
+    transform: scale(1.05);
+}
+
+/* Modern Secondary Button */
+.modern-btn-secondary {
+    background-color: white;
+    color: #3498db;
+    font-size: 1.25rem;
+    padding: 0.8rem 2rem;
+    border: 2px solid #3498db;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.modern-btn-secondary:hover {
+    background-color: #3498db;
+    color: white;
+    transform: scale(1.05);
+}
+.favorite-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    border-radius: 50%;
+    padding: 6px 8px;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.favorite-overlay:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+

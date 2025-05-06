@@ -1,0 +1,37 @@
+<!-- Jinja templating:  Jinja grabs values and inserts them into HTML at runtime.-->
+{% extends "layout.html" %}
+
+{% block content %}
+<div style="text-align: center;">
+   <img src="{{ company.image }}" alt="{{ company.item_name }} Image" width="300" style="max-height: 370px; object-fit: cover;">
+</div>
+
+<!-- ❤️ Add to Favorites Button -->
+{% set favorites = session.get('favorites', []) %}
+
+<div class="position-relative">
+    <img src="{{ company.image_url }}" class="img-fluid rounded" alt="{{ company.name }}">
+
+    <form action="{{ url_for('add_to_favorites', company_id=company.id) }}" method="POST">
+        {% if company.id in favorites %}
+            <button type="submit" class="btn btn-success btn-sm favorite-overlay">✅</button>
+        {% else %}
+            <button type="submit" class="btn btn-outline-danger btn-sm favorite-overlay">❤️</button>
+        {% endif %}
+    </form>
+</div>
+
+
+
+<h2>{{ company.item_name }}</h2>
+<p><strong>Brand:</strong> {{ company.brand }}</p>
+<p><strong>Category:</strong> {{ company.category }}</p>
+<p><strong>Style:</strong> {{ company.style }}</p>
+<p><strong>Price:</strong> {{ company.price }}</p>
+<p><strong>Color:</strong> {{ company.color }}</p>
+<p><strong>Material:</strong> {{ company.material }}</p>
+<p><strong>Description:</strong> {{ company.description }}</p>
+
+<button onclick="history.back()" class="btn btn-secondary">← Back</button>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+{% block content %}
+  <div class="container text-center mt-5">
+    <h2 class="mb-4" style="color: #2c3e50;">What are you looking for?</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-md-3 mb-3">
+        <a href="{{ url_for('search') }}?filter=category&value=top" class="btn modern-btn-primary w-100">Tops</a>
+      </div>
+      <div class="col-md-3 mb-3">
+        <a href="{{ url_for('search') }}?filter=category&value=bottom" class="btn modern-btn-primary w-100">Bottoms</a>
+      </div>
+      <div class="col-md-3 mb-3">
+        <a href="{{ url_for('search') }}?filter=category&value=shoes" class="btn modern-btn-primary w-100">Shoes</a>
+      </div>
+      <div class="col-md-3 mb-3">
+        <a href="{{ url_for('search') }}?filter=category&value=accessories" class="btn modern-btn-primary w-100">Accessories</a>
+      </div>
+    </div>
+  </div>
+  <button onclick="history.back()" class="btn btn-secondary">← Back</button>
+{% endblock %}
