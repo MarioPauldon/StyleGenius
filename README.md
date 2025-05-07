@@ -5,7 +5,7 @@
 ---
 ## How to Build & Run the App
 
-### 🛠️ Prerequisites
+### Prerequisites
 
 - Python 3.8+
 - Flask
@@ -13,7 +13,7 @@
 - scikit-learn (for cosine similarity comparison)
 - numpy
 
-### 🔧 Installation Steps
+### Installation Steps
 
 1. Clone the repo:
    ```bash
@@ -37,17 +37,17 @@ To replicate the similarity comparison experiment across platforms (e.g., your a
 - python compare_recommendations.py
 3. The file will print out similarity scores based on a set of prompts using cosine similarity and log the results
 
-### 🔗 External Software / Libraries Used
+### External Software / Libraries Used
 - Flask
 - Bootstrap 5
 - jQuery & jQuery UI
 - scikit-learn
 
-### 📌 Features
-- 🔍 Search by natural language or category
-- 📰 Curated articles for fashion education
-- ❤️ Save favorites to revisit later
-- 📈 Cosine similarity prompt evaluation engine
+### Features
+- Search by natural language or category
+- Curated articles for fashion education
+- Save favorites to revisit later
+- Cosine similarity prompt evaluation engine
 
 ### Author
 Mario Pauldon
